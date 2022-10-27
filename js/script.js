@@ -1,6 +1,7 @@
 "use strict";
-let urlApi = fetch("../json/Abbigliamento.json");
-console.log(urlApi);
+function getApi() {
+    let urlApi = fetch("../json/Abbigliamento.json").then((response) => response.json());
+}
 class Abbigliamento {
     constructor(id, codprod, collezione, capo, modello, quantita, colore, prezzoivaesclusa, prezzoivainclusa, disponibile, saldo) {
         this.id = id;
