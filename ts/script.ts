@@ -1,3 +1,5 @@
+let urlApi = fetch("../json/Abbigliamento.json")
+console.log(urlApi)
 class Abbigliamento {
     id:number;
     codprod:number;

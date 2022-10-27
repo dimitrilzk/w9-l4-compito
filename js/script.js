@@ -1,4 +1,6 @@
 "use strict";
+let urlApi = fetch("../json/Abbigliamento.json");
+console.log(urlApi);
 class Abbigliamento {
     constructor(id, codprod, collezione, capo, modello, quantita, colore, prezzoivaesclusa, prezzoivainclusa, disponibile, saldo) {
         this.id = id;
